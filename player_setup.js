@@ -61,3 +61,49 @@ export function fullscreenToggleChanger(player) {
     player.controlBar.removeChild('FullscreenToggle');
     player.controlBar.addChild('MyFullscreenToggle');
 }
+
+/*
+const dragDropArea = document.getElementById('drag-video-file');
+const fileInput = document.getElementById('video-input');
+
+// Prevent default behaviors for drag events
+dragDropArea.addEventListener('dragenter', (event) => {
+  event.preventDefault();
+  dragDropArea.classList.add('drag-over');
+});
+
+dragDropArea.addEventListener('dragover', (event) => {
+  event.preventDefault();
+  dragDropArea.classList.add('drag-over');
+});
+
+dragDropArea.addEventListener('dragleave', () => {
+  dragDropArea.classList.remove('drag-over');
+});
+
+dragDropArea.addEventListener('drop', (event) => {
+  event.preventDefault();
+  dragDropArea.classList.remove('drag-over');
+
+  const files = event.dataTransfer.files;
+  handleDroppedFiles(files);
+});
+
+// Open file input when the drag-and-drop area is clicked
+dragDropArea.addEventListener('click', () => {
+  fileInput.click();
+});
+
+// Handle dropped files
+function handleDroppedFiles(files) {
+  // Handle the dropped files (e.g., upload, process, etc.)
+  console.log('Dropped files:', files);
+}
+
+// Optional: Listen for file selection in the file input
+fileInput.addEventListener('change', () => {
+  const selectedFiles = fileInput.files;
+  handleDroppedFiles(selectedFiles);
+});
+
+*/
